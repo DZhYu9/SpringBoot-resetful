@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testRest</title>
+</head>
+<body>
+    <h1>测试请求方式</h1>
+    <br>
+    <form action="student/test" method="post">
+
+        <input type="submit" value="test/post请求">
+    </form>
+    <br>
+    <form action="student/test" method="post">
+        <input type="hidden" name="_method" value="put">
+        <input type="submit" value="test/put请求">
+    </form>
+</body>
+</html>
