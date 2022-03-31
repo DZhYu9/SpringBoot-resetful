@@ -1,6 +1,7 @@
 package com.itzy.controller;
 
 import org.springframework.web.bind.annotation.*;
+import org.w3c.dom.ls.LSOutput;
 
 /**
  * author:DZhY
@@ -29,6 +30,10 @@ public class MyRestController {
         return "查询学生id是："+studentId;
     }
     //提交到gitHub上  (1)
+    public String testGit(){
+        System.out.println("push到github仓库");
+        return "push";
+    }
 
 //    创建资源 post请求方式
     @PostMapping("/aadStudent/{stuName}/{stuAge}")
